@@ -20,11 +20,11 @@ module UploadsHelper
   #  max_filesize              2.megabytes
 
   def s3_uploader(options = {})
-    options[:s3_config_filename] ||= "#{RAILS_ROOT}/config/amazon_s3.yml"
-    config = YAML.load_file(options[:s3_config_filename])
-    bucket            = config[RAILS_ENV]['bucket_name']
-    access_key_id     = config[RAILS_ENV]['access_key_id']
-    secret_access_key = config[RAILS_ENV]['secret_access_key']
+    options[:s3_config_filename] ||= "#{Rails.root}/config/amazon_s3.yml"
+    config = YAML.load_file(options[:s3_config_filename])[Rails.env].symbolize_keys
+    bucket            = config[:bucket_name]
+    access_key_id     = config[:access_key_id]
+    secret_access_key = config[:secret_access_key]
 
     options[:key] ||= 'test'  # folder on AWS to store file in
     options[:acl] ||= 'public-read'
