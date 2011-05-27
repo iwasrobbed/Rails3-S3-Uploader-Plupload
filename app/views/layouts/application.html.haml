@@ -1,0 +1,12 @@
+!!! Strict
+%html
+  %head
+    %title= "S3 Uploader using PLUpload"
+    = stylesheet_link_tag "styles"
+    = javascript_include_tag( 'jquery-1.5.js', 
+                              'plupload/plupload.full' )
+                              
+    %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    
+  %body
+    = yield

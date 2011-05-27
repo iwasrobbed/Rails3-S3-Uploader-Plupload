@@ -1,0 +1,8 @@
+development:
+  bucket_name: bucket_name_goes_here
+  access_key_id: access_key_goes_here
+  secret_access_key: secret_key_goes_here
+production:
+  bucket_name: bucket_name_goes_here
+  access_key_id: access_key_goes_here
+  secret_access_key: secret_key_goes_here

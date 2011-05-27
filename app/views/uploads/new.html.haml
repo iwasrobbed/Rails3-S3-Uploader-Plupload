@@ -1,0 +1,10 @@
+.tcenter.grayField.ral
+  %h2.borderBottom Upload New Image
+  #progress_bar.ui-progress-bar.ui-container
+    .ui-progress{:style => "width: 5%;"}
+      %span.ui-label{:style => "display:none;"}
+        Uploading
+  
+  :plain      
+    #{s3_uploader(:max_filesize => 500.megabytes)}
+  %a{:id => "pickfiles", :href => "#", :class => "medium silver button ram"} Select image
