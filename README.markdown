@@ -40,6 +40,9 @@ Hopefully WireShark helps you solve many headaches in the future.  Happy uploadi
 
 **Note** PLUpload uses CSS to absolutely position the Flash/Silverlight objects over top of your custom "Upload" button, so if you move that button at all during the upload process the Flash/Silverlight object will still be there.
 
+## Collaboration
+I am always open to others collaborating on this example and I welcome any pull requests.  If you find any issues, please report them in the **Issues** area above.  Thanks!!
+
 ## Credits
 ### Original Author
 Nico Ritsche:  https://github.com/ncri
