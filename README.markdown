@@ -41,6 +41,11 @@ Hopefully WireShark helps you solve many headaches in the future.  Happy uploadi
 
 **Note** PLUpload uses CSS to absolutely position the Flash/Silverlight objects over top of your custom "Upload" button, so if you move that button at all during the upload process the Flash/Silverlight object will still be there.
 
+## Generating a secure, time-sensitive URL for S3 objects
+If you would like to generate a secure, time-sensitive URL for accessing an object after you are finished uploading the file, here is a gist file which will help you to do so:  https://gist.github.com/1032395
+
+One thing to remember is that you should be setting the ACL of the file to private when you upload it so that no one else can access it without that signed URL.
+
 ## Collaboration
 I am always open to others collaborating on this example and I welcome any pull requests.  If you find any issues, please report them in the **Issues** area above.  Thanks!!
 
