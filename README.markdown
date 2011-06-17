@@ -10,6 +10,7 @@ This is just a sample app using Rails 3 which allows you to upload directly to A
 For debugging purposes involving Flash uploading, I would highly recommend using the [WireShark](http://www.wireshark.org/download.html) tool which allows you to sniff the network traffic for XML responses sent back from Amazon S3.
 
 Link to download WireShark:  http://www.wireshark.org/download.html
+
 How to install on MacOSX: http://www.youtube.com/watch?v=IxeHm0BKdwc
 
 Amazon S3 will always send back an XML response to the Flash uploader and currently the uploader does nothing with it except give a vague error response which isn't helpful.  
