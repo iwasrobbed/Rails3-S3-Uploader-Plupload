@@ -30,7 +30,7 @@ Hopefully WireShark helps you solve many headaches in the future.  Happy uploadi
 
 - **For Flash**: Make sure a public readable `crossdomain.xml` exists in the root directory of the S3 bucket you specified in `config/amazon_s3.yml`, with the following content (once you get it working, you **should** limit access to your domain to be more secure).  An example can be [found here](https://gist.github.com/995182)
 
-- **For Silverlight**: Make sure a public readable `clientaccesspolicy.xml` exists in the root directory of the S3 bucket you specified in `config/amazon_s3.yml`, with the following content (once you get it working, you **should** limit access to your domain to be more secure).  An example can be [found here](https://gist.github.com/gists/995348/edit)
+- **For Silverlight**: Make sure a public readable `clientaccesspolicy.xml` exists in the root directory of the S3 bucket you specified in `config/amazon_s3.yml`, with the following content (once you get it working, you **should** limit access to your domain to be more secure).  An example can be [found here](https://gist.github.com/gists/995348)
 
 - Also make sure a folder named **test** exists in that bucket (if not, one will be created). Files will be uploaded to that folder.
 
@@ -38,7 +38,7 @@ Hopefully WireShark helps you solve many headaches in the future.  Happy uploadi
 
 - If you want to explore the code, the bulk of it is in the `helpers/uploads_helper.rb` file and then a convenient helper for using/customizing the uploader can be found in the `views/uploads/new.html.haml` file 
 
-**Note** PLUpload uses CSS to absolutely position the Flash/Silverlight objects over top of your custom "Upload" button, so if you move that button at all during the upload process the Flash/Silverlight object will still be there.  What you can do is target the `div` that gets created for the object and then change it's CSS properties like this:
+**Note** PLUpload uses CSS to absolutely position the Flash/Silverlight objects over top of your custom "Upload" button, so if you move that button at all during the upload process the Flash/Silverlight object will still be there.
 
 ## Credits
 ### Original Author
