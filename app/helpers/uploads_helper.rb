@@ -114,7 +114,7 @@ module UploadsHelper
             $('span.ui-label').show();
         
             // start the uploader after the progress bar shows
-            $('#progress_bar').show(function () {               
+            $('#progress_bar').show('fast', function () {               
               uploader.start();
             });
         });
