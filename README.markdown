@@ -4,8 +4,6 @@ This is just a sample app using Rails 3 which allows you to upload directly to A
 - Uploading:  [PLUpload](http://plupload.com)
 - Uploading Technology:  **jQuery API** using **Flash, Google Gears, Silverlight, BrowserPlus, HTML5** to do the heavy lifting
 
-**Note**: Currently Amazon S3 **DOES NOT** support HTML5 uploading.  [More info here](https://forums.aws.amazon.com/thread.jspa?threadID=34281)
-
 ## Debugging Flash Uploaders
 For debugging purposes involving Flash uploading, I would highly recommend using the [WireShark](http://www.wireshark.org/download.html) tool which allows you to sniff the network traffic for XML responses sent back from Amazon S3.
 
