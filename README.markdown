@@ -1,3 +1,5 @@
+Support this project via Gratipay <a href="https://gratipay.com/iwasrobbed/"><img src="http://img.shields.io/gratipay/iwasrobbed.svg"></a>
+
 ## Updated for Rails 3 & PLUpload
 This is just a sample app using Rails 3 which allows you to upload directly to Amazon S3 and bypass the Rails server entirely.  This is useful for cloud hosting like Heroku which has a 30 second request timeout and resets the connection on any uploads which go over that limit.
 
